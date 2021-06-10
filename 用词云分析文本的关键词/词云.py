@@ -23,7 +23,7 @@ from wordcloud import WordCloud
 def get_word_cloud(keywords_list):
     # 实例化绘制词云的类，其中参数font_oath是字体路径，为了能够显示中文
     # max_words指词云图像最多显示多少个词，background_color为背景颜色
-    wordcloud = WordCloud(font_path="./SimHei.ttf", max_words=100, background_color="white")
+    wordcloud = WordCloud(font_path="SimHei.ttf", max_words=100, background_color="white")
     # 将传入的列表转化成词云生成器需要的字符串形式，应为词云对象的参数要求是字符串类型
     keywords_string = " ".join(keywords_list)
     # 生成词云
